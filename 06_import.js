@@ -4,7 +4,7 @@ import DateHelper, { sum, division, A } from './07_exports.js';
 
 // 2.yöntem
 // dosyadaki tüm değerleri takma bir isim ile dışarı çıkarma as alias anlamında kullanılır
-import * as f from './07_exports.js';
+import * as mymodule from './07_exports.js';
 // C# using kod blogu
 
 const date = DateHelper.getPrettyDate();
@@ -17,5 +17,6 @@ division(3, 5);
 const a = new A();
 a.do();
 
-f.sum();
-f.division();
+mymodule.sum();
+mymodule.division();
+mymodule.default.getPrettyDate(); // module ismi ile default olarak çağırma
