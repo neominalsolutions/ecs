@@ -21,6 +21,7 @@ export class A {
 }
 
 // DateHelper ismi ile direkt olarak dışarı çıkmış oluruz.
+// default keyword ile DateHelper ismi ile dosyadan dışarı çıkar.
 export default class DateHelper {
 	static getPrettyDate() {
 		return new Date();
